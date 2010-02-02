@@ -1,0 +1,15 @@
+syntax: glob
+*~
+*.pyc
+*.pyo
+
+syntax: regexp
+^tmp......$
+\.tmproj$
+(^|/)\.DS
+(^|/)\._
+\.egg-info/
+^build/
+^MANIFEST
+^dist/
+^doc/_build
