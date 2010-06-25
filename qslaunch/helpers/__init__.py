@@ -13,5 +13,5 @@ qslaunch.helpers
     :license: Apache License 2.0
 """
 
-from . import iterm, textmate
+from . import iterm, mail, textmate
 
