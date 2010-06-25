@@ -12,6 +12,12 @@ clean:
 	python setup.py clean
 	-rm -rf build/docs
 
+tag_version:
+	@echo "Checking for uncommitted changed..."
+	hg summary | grep -q 'commit: (clean)'
+	@echo "Clean!"
+	hg tag `python -c 'from qslaunch import get_version; print get_version().replace(" ", "-")'`
+
 upload: upload_sdist upload_doc
 
 upload_sdist:
