@@ -10,22 +10,21 @@ qslaunch
 
 """
 
-VERSION = (0, 2, 0, 'final', 0)
+VERSION = (0, 3, 0, 'final', 0)
 
-def get_version():
+def get_version(full=False):
     """Return version number."""
     version = '%s.%s' % (VERSION[0], VERSION[1])
     if VERSION[2]:
         version = '%s.%s' % (version, VERSION[2])
     if VERSION[3:] == ('alpha', 0):
         version = '%s pre-alpha' % version
-    else:
-        if VERSION[3] != 'final':
-            version = '%s %s %s' % (version, VERSION[3], VERSION[4])
-    from .utils.version import get_hg_revision
-    hg_rev = get_hg_revision()
-    if hg_rev != u'HG-unknown':
-        version = "%s %s" % (version, hg_rev)
+    elif VERSION[3] != 'final' or full:
+        version = '%s %s %s' % (version, VERSION[3], VERSION[4])
+    # from .utils.version import get_hg_revision
+    # hg_rev = get_hg_revision()
+    # if hg_rev != u'HG-unknown':
+    #     version = "%s %s" % (version, hg_rev)
     return version
 
 

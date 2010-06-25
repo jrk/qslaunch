@@ -9,12 +9,12 @@ Provides helper functions for Mail.app.
 Execute helpers
 -----------------------------------------------------------------------------
 
-.. autofunction:: color
+.. autofunction:: color_selected_msgs
 
 Commands
 -----------------------------------------------------------------------------
 
-.. autofunction:: cmd_color
+.. autofunction:: cmd_color_selected_msgs
 
 
 ..

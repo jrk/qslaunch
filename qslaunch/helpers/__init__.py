@@ -6,6 +6,8 @@ qslaunch.helpers
 
 .. automodule:: qslaunch.helpers.iterm
 
+.. automodule:: qslaunch.helpers.mail
+
 .. automodule:: qslaunch.helpers.textmate
 
 ..
