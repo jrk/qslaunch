@@ -1,5 +1,5 @@
 
-.PHONY: help doc
+.PHONY: help clean tag_version docs upload upload_sdist upload_doc
 
 help:
 	@echo "Usage: make <target>"
@@ -27,8 +27,10 @@ upload_doc: docs
 	python setup.py upload_docs
 
 docs:
-	cd doc; $(MAKE) $(MFLAGS) html
+	cd doc; $(MAKE) $(MFLAGS) html latex
+	cd doc/_build/latex; $(MAKE) $(MFLAGS) all-pdf
 	-rm -rf build/docs
 	cp -a doc/_build/html build/docs
+	cp -a doc/_build/latex/qslaunch.pdf build/docs/
 	-rm -f build/docs/.buildinfo
 
