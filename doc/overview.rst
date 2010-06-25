@@ -31,3 +31,8 @@ included commands…
 The project page is currently hosted on my blog:
 `qslaunch <http://greyworld.net/en/projects/qslaunch>`_.
 
+
+Other links:
+* `mercurial repository <http://bitbucket.org/greyw/qslaunch/>`_
+* `online documentation <http://packages.python.org/qslaunch/>`_
+

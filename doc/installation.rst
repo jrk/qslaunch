@@ -22,7 +22,7 @@ To install qslaunch, simply open a terminal and type:
 
 .. code-block:: console
 
-  $ sudo easy_install http://greyworld.net/qslaunch/files/qslaunch-0.2.tar.gz
+  $ sudo easy_install qslaunch
 
 If appscript is not installed, it should be handled automatically by ``easy_install``.
 
@@ -30,5 +30,4 @@ If using `pip <http://pip.openplans.org/>`_, you can install it directly from th
 
 .. code-block:: console
 
-  $ sudo pip install hg+http://greyworld.net/qslaunch/hg/
-
+  $ sudo pip install hg+http://bitbucket.org/greyw/qslaunch/

@@ -33,5 +33,5 @@ More complex examples
 
 You can find other examples in the "examples" directory of the source.
 
-You can browse this online on `qslaunch's mercurial repository <http://greyworld.net/qslaunch/hg/>`_.
+You can browse this online on `qslaunch's mercurial repository <http://bitbucket.org/greyw/qslaunch/>`_.
 

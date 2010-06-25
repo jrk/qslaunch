@@ -7,21 +7,22 @@ setup.py
 :license: Apache License 2.0
 """
 
-__version__ = '0.3.0'
-
 from setuptools import setup, find_packages
+from qslaunch import get_version
 
 setup(
     name='qslaunch',
-    version= __version__,
+    version= get_version().replace(' ', '-'),
     description='Simple QuickSilver launcher helper',
     long_description=u"""\
-``qslaunch`` is a small framework to facilitate launching shell stuff from Quicksilver_.
+``qslaunch`` is a small framework to facilitate launching shell stuff from Quicksilver.
 
-The latest version is available in a `Mercurial repository`_.
+See also:
+- `Mercurial repository`_
+- `Documentation`_
 
 .. _Mercurial repository: http://bitbucket.org/greyw/qslaunch/
-.. _Quicksilver: http://www.blacktree.com/
+.. _Documentation: http://packages.python.org/qslaunch/
 """,
     author=u'Serge Émond',
     author_email='greyl@greyworld.net',
